@@ -15,7 +15,7 @@ let calculateBmi = () => {
   let weightvalue = weightInput.value;
   let heightvalue = heightInput.value;
 
-  let bmi = (weightvalue / Math.pow(heightvalue / 1000, 2)).toFixed(1);
+  let bmi = (weightvalue / Math.pow(heightvalue / 100, 2)).toFixed(1);
 
   if (bmi < 18.5) {
     halth_status.innerHTML = "You are Underweight";
