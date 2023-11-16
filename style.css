@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-1: #c2d9ff;
+  --color-2: #7752fe;
+  --color-3: #ffffff;
+  --color-4: #8e8ffa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-1);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 25px;
+  width: 350px;
+  background: var(--color-2);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+}
+
+.container .app-title {
+  text-align: center;
+  font-size: 22px;
+  color: var(--color-3);
+}
+
+.container .box {
+  height: 120px;
+  width: 300px;
+  background: var(--color-3);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: rgba(142, 143, 250, 0.2) 0px 2px 8px 0px;
+}
+
+.container .box h4 {
+  text-align: center;
+  color: var(--color-2);
+}
+
+.container .box input {
+  all: unset;
+  height: 40px;
+  width: 200px;
+  border-bottom: 1px solid var(--color-2);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 25px;
+  text-align: center;
+}
+
+.container .calculate-btn {
+  all: unset;
+  height: 45px;
+  width: 100%;
+  color: var(--color-3);
+  background: var(--color-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .result-box {
+  display: none;
+}
+
+.container .result-box .yr-bmi-text {
+  text-align: center;
+  margin-top: 17px;
+  font-weight: 600;
+  color: var(--color-3);
+}
+
+.container .result-box .bmi {
+  padding: 0 10px;
+  height: 50px;
+  background: var(--color-3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-2);
+  box-shadow: rgba(142, 143, 250, 0.2) 0px 2px 8px 0px;
+  margin: auto;
+  width: 120px;
+  margin-top: 5px;
+  font-size: 23px;
+}
+
+.container .result-box .result {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 15px;
+  color: var(--color-3);
+}
+
+::selection {
+  background: rgb(142, 143, 250);
+  color: var(--color-3);
+}
